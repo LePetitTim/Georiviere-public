@@ -52,7 +52,7 @@ jobs:
         run: |
           cd install
           mkdir georiviere-public
-          cp * ./georiviere-public 2>/dev/null || :
+          cp -r * ./georiviere-public 2>/dev/null || :
           cp .env.dist ./georiviere-public
           zip -r ../install.zip georiviere-public/
 
